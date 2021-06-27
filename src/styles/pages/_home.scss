@@ -1,0 +1,152 @@
+#video {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: rgb(197, 190, 190) no-repeat center center/cover;
+}
+video {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.overlay {
+  width: 100px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(23, 228, 54, 0.863);
+  z-index: 2;
+}
+
+
+/* Hero */
+#hero {
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 60px;
+  font-family: serif;
+  line-height: 0.9;
+}
+
+#hero p {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+#hero button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 32px 14px 32px;
+  border-radius: 999px;
+  background-color: #fff;
+  border-color: #fff;
+  color: #212121;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 720px) {
+  #hero {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+  }
+  #hero h1 {
+    font-size: 90px;
+    font-family: "Abhaya Libre", serif;
+    line-height: 0.9;
+  }
+
+  #hero p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+/* Main 1 */
+.main {
+  color: black;
+  height: 80vh;
+  margin-top: 0px;
+  background-color: #071c4d;
+}
+.content-main {
+  padding-top: 80px;
+}
+/* Section Stats */
+.section-stats {
+  margin-top: 0px;
+}
+.section-stats .stats-detail {
+  padding-top: 15px;
+  background-color: #ddd;
+  /* padding-left: 40px; */
+}
+.section-stats h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.section-stats p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* Header Gallery */
+.header-gallery {
+  min-height: 540px;
+  background-color: #212121;
+  margin-top: -50px;
+  margin-bottom: -250px;
+}
+.header-gallery .div-header-gallery {
+  margin-top: 150px;
+}
+
+.div-header-gallery h2,
+p {
+  color: #fff;
+}
+.div-header-gallery h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.div-header-gallery p {
+  font-size: 40px;
+}
+
+/* Section Gallery */
+.card-gallery {
+  min-height: 380px;
+  background-color: #ddd;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.gallery-button .btn-details {
+  background-color: #ff9e53;
+  color: #fff;
+}
+
+.gallery-button .btn-details:hover {
+  background-color: #ffae6f;
+  color: #fff;
+}
+
+.section-footer {
+  a {
+    color: #071c4d;
+    
+  }
+}

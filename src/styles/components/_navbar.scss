@@ -1,0 +1,41 @@
+/* Navbar */
+.navbar {
+  // overflow: hidden;
+  
+  background-color: transparent;
+  transform: translate3d(0,0,0);
+  transition: 0.4s all ease-out;
+  padding-top: 24px;
+  // padding-bottom: ;
+  background-color: #212121;
+  font-family: sans-serif;
+  
+  .navbar-brand {
+    font-size: 30px;
+    font-family: serif;
+    color: black;
+  }
+}
+
+.navbar.navbar--hidden{
+  transform: translate3d(0,-100%,0);
+}
+
+
+.nav-link {
+  color: bisque;
+  font-weight: 300;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: blue;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
+  }
+}
