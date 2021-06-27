@@ -1,12 +1,9 @@
 /* Navbar */
 .navbar {
-  // overflow: hidden;
-  
-  background-color: transparent;
+
   transform: translate3d(0,0,0);
   transition: 0.4s all ease-out;
-  padding-top: 24px;
-  // padding-bottom: ;
+  padding: 0 0 0 0;
   background-color: #212121;
   font-family: sans-serif;
   
@@ -15,12 +12,12 @@
     font-family: serif;
     color: black;
   }
-}
+  .navbar-brand:hover{
+    color: wheat;
+  }
 
-.navbar.navbar--hidden{
-  transform: translate3d(0,-100%,0);
+  
 }
-
 
 .nav-link {
   color: bisque;
@@ -29,7 +26,7 @@
 
 .nav-link:hover,
 .nav-link:active {
-  color: blue;
+  color: #fff;
   font-weight: 500;
 }
 

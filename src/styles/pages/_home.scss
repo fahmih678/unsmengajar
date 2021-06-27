@@ -81,48 +81,56 @@ video {
 .content-main {
   padding-top: 80px;
 }
+
+
 /* Section Stats */
 .section-stats {
   margin-top: 0px;
-}
-.section-stats .stats-detail {
-  padding-top: 15px;
-  background-color: #ddd;
-  /* padding-left: 40px; */
-}
-.section-stats h2 {
-  font-size: 30px;
-  margin-bottom: 0;
-}
-.section-stats p {
-  font-size: 20px;
-  font-weight: lighter;
+  .stats-detail {
+    padding-top: 15px;
+    background-color: #ddd;
+    /* padding-left: 40px; */
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  p {
+   font-size: 20px;
+   font-weight: lighter;
+ }
 }
 
 /* Header Gallery */
 .header-gallery {
   min-height: 540px;
   background-color: #212121;
-  margin-top: -50px;
-  margin-bottom: -250px;
-}
-.header-gallery .div-header-gallery {
-  margin-top: 150px;
+  // margin-top: -50px;
+  // margin-bottom: -250px;
+  .div-header-gallery {
+    margin-top: 150px;
+
+    h2,
+    p {
+      color: #fff;
+    }
+
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 40px;
+    }
+  }
 }
 
-.div-header-gallery h2,
-p {
-  color: #fff;
-}
-.div-header-gallery h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.div-header-gallery p {
-  font-size: 40px;
-}
+ 
 
 /* Section Gallery */
 .card-gallery {
@@ -144,6 +152,24 @@ p {
   color: #fff;
 }
 
+// Section Quote
+.section-quote {
+  
+  .carousel-item {
+    background-color: #ddd;
+    .carousel-caption{
+      background-color: rgba(255,255,255,0.5);
+
+    }
+    .img-testimoni{
+      object-fit: cover;
+      max-height: 50vh;
+    }
+  }
+}
+
+
+// 
 .section-footer {
   a {
     color: #071c4d;

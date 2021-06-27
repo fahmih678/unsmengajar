@@ -3,6 +3,7 @@
     class="navbar navbar-expand-lg fixed-top navbar-fixed-top"
     :class="{
       'navbar--hidden': !showNavbar,
+      'navbar--change': !change,
     }"
     id="navbar"
   >
@@ -72,26 +73,11 @@
 export default {
   name: "Navbar",
 
-  // Scroll navbar
-  // onScroll() {
-  //   const currentScrollPosition =
-  //     window.pageYOffset || document.documentElement.scrollTop;
-  //   if (currentScrollPosition < 0) {
-  //     return;
-  //   }
-  //   // Stop executing this function if the difference between
-  //   // current scroll position   and last scroll position is less than some offset
-  //   if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
-  //     return;
-  //   }
-  //   this.showNavbar = currentScrollPosition < this.lastScrollPosition;
-  //   this.lastScrollPosition = currentScrollPosition;
-  // },
-
   data() {
     return {
       showNavbar: true,
       lastScrollPosition: 0,
+      change: true,
     };
   },
   mounted() {
@@ -116,11 +102,7 @@ export default {
       // Set the current scroll position as the last scroll position
       this.lastScrollPosition = currentScrollPosition;
 
-      if (this.lastScrollPosition < 50) {
-        document.getElementById("navbar").style.backgroundColor = "black";
-      } else {
-        document.getElementById("navbar").style.backgroundColor = "transparent";
-      }
+      this.change = this.lastScrollPosition > 200;
     },
   },
 };
@@ -128,9 +110,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/components/navbar";
-// .navbar-scroll {
-//   // background-color: #212121 !important;
-// }
+.navbar--change {
+  padding-top: 24px;
+  background-color: transparent;
+}
 
 .navbar.navbar--hidden {
   box-shadow: none;
